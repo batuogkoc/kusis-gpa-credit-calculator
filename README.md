@@ -1,10 +1,11 @@
 # KUSIS GPA Credit Calculator
 
 This program calculates your total credits and your GPA \(to an ungodly precision\).
-Especially useful for being %100 sure of your enrollment group.
+It also calculates which enrollment group you fall into.
 Designed for people who love to automate pointless tasks.\
 \
 **IMPORTANT NOTE TO RECRUITERS: THIS ISN'T MY BEST WORK BY A LOOONG SHOT, ITS MEANT MOSTLY AS A JOKE PLEASE DONT LAUGH ME OUT OF THE APPLICANT POOL**
+**NOTE TO USERS: USE WITH CAUTION. ALL RESPONSIBILITY OF MISSED ENROLLMENTS FALLS UPON THE USER**
 
 ## Requirements
 
