@@ -1,0 +1,548 @@
+input_txt = """
+ACWR 101
+	
+BASIC ACADEMIC WRITING
+	
+Fall 2021
+	
+A-
+	
+3,00
+	
+Taken
+	
+Y
+ACWR 106
+	
+ACAD. WR. FOR SCI.TECH
+	
+Spring 2023
+	
+A
+	
+3,00
+	
+Taken
+	
+Y
+ALIS 100
+	
+ACADEMIC AND LIFE SKILLS
+	
+Fall 2021
+	
+S
+	
+1,00
+	
+Taken
+	
+N
+COMP 100
+	
+INTRO TO COMP. SCIEPRG.
+	
+Fall 2021
+	
+A+
+	
+3,00
+	
+Taken
+	
+Y
+COMP 106
+	
+DISCRt MATH COMP SC ENG
+	
+Fall 2021
+	
+A+
+	
+3,00
+	
+Taken
+	
+Y
+COMP 132
+	
+ADVANCED PROGRAMMING
+	
+Spring 2022
+	
+A+
+	
+3,00
+	
+Taken
+	
+Y
+COMP 201
+	
+COMPUTER SYSTEMSPROGRAMMING
+	
+Fall 2022
+	
+A+
+	
+3,00
+	
+Taken
+	
+Y
+COMP 202
+	
+DATA STRUCALGORITHMS
+	
+Spring 2023
+	
+A+
+	
+3,00
+	
+Taken
+	
+Y
+COMP 291
+	
+SUMMER PRACTICE I
+	
+Summer 2023
+	
+S
+	
+0,00
+	
+Taken
+	
+N
+COMP 301
+	
+PROGRAM. LANG. CONCEPTS
+	
+Fall 2023
+	
+A+
+	
+3,00
+	
+Taken
+	
+Y
+COMP 302
+	
+SOFTWARE ENG.
+	
+Fall 2023
+	
+A
+	
+3,00
+	
+Taken
+	
+Y
+COMP 305
+	
+ALGORITHMSCOMPLEXITY
+	
+Spring 2024
+	
+A+
+	
+3,00
+	
+Taken
+	
+Y
+COMP 429
+	
+PARALLEL PROGRAMMING
+	
+Fall 2023
+	
+A
+	
+3,00
+	
+Taken
+	
+Y
+COMP 447
+	
+DEEP UNSUPERVISED LEARNING
+	
+Spring 2024
+	
+W
+	
+3,00
+	
+Taken
+	
+N
+CPAP 100
+	
+COMP PROF ASSESSMENT PROG
+	
+Spring 2022
+	
+S
+	
+0,00
+	
+Taken
+	
+N
+ECON 100
+	
+PRINCIPLES OF ECONOMICS
+	
+Fall 2022
+	
+A
+	
+3,00
+	
+Taken
+	
+Y
+ELEC 100
+	
+INTRO TO ELEC. ENGINEERIN
+	
+Spring 2023
+	
+A+
+	
+3,00
+	
+Taken
+	
+Y
+ELEC 201
+	
+SIGNALS AND SYSTEMS
+	
+Fall 2022
+	
+A+
+	
+4,00
+	
+Taken
+	
+Y
+ELEC 202
+	
+CIRCUITS
+	
+Fall 2023
+	
+A
+	
+4,00
+	
+Taken
+	
+Y
+ELEC 205
+	
+DIGITAL SYSTEM DESIGN
+	
+Spring 2023
+	
+A
+	
+3,00
+	
+Taken
+	
+Y
+ELEC 301
+	
+SYSTEMS, CONTROLCOMMUNICATN
+	
+Spring 2024
+	
+A
+	
+3,00
+	
+Taken
+	
+Y
+ELEC 310
+	
+MICROELECTRONIC CIRCUITS AND D
+	
+Spring 2024
+	
+A-
+	
+4,00
+	
+Taken
+	
+Y
+ELEC 391
+	
+SUMMER PRACTICE II
+	
+Summer 2024
+	
+ 
+	
+0,00
+	
+In Progress
+	
+N
+ENGR 200
+	
+PROB.RANDOM VARI. ENG.
+	
+Spring 2023
+	
+A+
+	
+4,00
+	
+Taken
+	
+Y
+ENGR 421
+	
+INTRO. TO MACHINE LEARNING
+	
+Spring 2024
+	
+A
+	
+3,00
+	
+Taken
+	
+Y
+ETHC 113
+	
+QUEST FOR ETHICAL FOUNDAT
+	
+Fall 2023
+	
+A
+	
+3,00
+	
+Taken
+	
+Y
+HIST 300
+	
+HIST. OF MODERN TÜRKİYE
+	
+Fall 2023
+	
+A
+	
+4,00
+	
+Taken
+	
+Y
+HUMS 131
+	
+HISTORY, POWER AND PEOPLE
+	
+Spring 2024
+	
+A
+	
+3,00
+	
+Taken
+	
+Y
+MATH 106
+	
+CALCULUS I
+	
+Fall 2021
+	
+A
+	
+3,00
+	
+Taken
+	
+Y
+MATH 107
+	
+INTR.TO LINEAR ALGEBRA
+	
+Spring 2022
+	
+A+
+	
+3,00
+	
+Taken
+	
+Y
+MATH 203
+	
+MULTIVARIABLE CALCULUS
+	
+Spring 2022
+	
+A+
+	
+3,00
+	
+Taken
+	
+Y
+MATH 204
+	
+DIFF. EQUATIONS
+	
+Fall 2022
+	
+A
+	
+3,00
+	
+Taken
+	
+Y
+MATH 303
+	
+APPLIED MATHEMATICS
+	
+Spring 2023
+	
+A
+	
+3,00
+	
+Taken
+	
+Y
+MBGE 200
+	
+INTRODUCTORY BIOLOGY
+	
+Fall 2022
+	
+A+
+	
+3,00
+	
+Taken
+	
+Y
+PHYS 101
+	
+GENERAL PHYSICS I
+	
+Fall 2021
+	
+A
+	
+3,00
+	
+Taken
+	
+Y
+PHYS 101L
+	
+GENERAL PHYS I LAB
+	
+Fall 2021
+	
+A+
+	
+1,00
+	
+Taken
+	
+Y
+PHYS 102
+	
+GENERAL PHYSICS II
+	
+Spring 2022
+	
+A
+	
+3,00
+	
+Taken
+	
+Y
+PHYS 102L
+	
+GENERAL PHYSICS II LAB
+	
+Spring 2022
+	
+A+
+	
+1,00
+	
+Taken
+	
+Y
+PSYC 100
+	
+PSYCHOLOGY
+	
+Spring 2022
+	
+A+
+	
+3,00
+	
+Taken
+	
+Y
+TURK 100
+	
+TURKSH-SPEECHCOMPOSITION
+	
+Spring 2022
+	
+A
+	
+4,00
+	
+Taken
+	
+Y
+UNIV 101
+	
+INTRO KOÇ UNIVERSITY
+	
+Fall 2021
+	
+S
+	
+1,00
+	
+Taken
+	
+N
+UNIV 121
+	
+EFFECTIVE SPEAKING
+	
+Fall 2021
+	
+S
+	
+1,00
+	
+Taken
+	
+N
+"""
