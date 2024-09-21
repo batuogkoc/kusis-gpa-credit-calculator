@@ -38,7 +38,7 @@ def parse_and_find_enrollment_group(file, credit_count):
     return ret
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser("This is a program that calculates your credits and GPA using your KUSIS 'Course History' tab")
+    parser = argparse.ArgumentParser("This is a program that calculates your credits, GPA and enrollment group using your KUSIS 'Course History' tab")
     parser.add_argument("-f", "--file",
                         default="in.txt",
                         help="The input file that contains your copied and pasted KUSIS 'Course History' tab")
